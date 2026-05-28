@@ -1,0 +1,27 @@
+🚀 Configuração Inicial
+git config --global user.name "Seu Nome" - Define seu nome de usuário.
+git config --global user.email "seu_email@exemplo.com" - Define o seu e-mail registrado.
+
+📁 Configurando um Repositório
+git init - Inicia o controle de versão Git em uma pasta local existente.
+git clone <url-do-repositorio> - Baixa um projeto existente da nuvem para a sua máquina.
+
+🔄 Fluxo de Trabalho (Ciclo de Vida)
+git status - Exibe o estado atual do seu repositório (arquivos modificados, preparados, etc.).
+git add <nome-arquivo> - Adiciona um arquivo específico para a área de preparação (staging).
+git add . - Adiciona todos os arquivos modificados da pasta para o staging.
+git commit -m "Mensagem descritiva" - Salva as alterações preparadas no seu histórico local com uma mensagem explicando o que foi feito.
+
+🌐 Repositório Remoto
+git remote add origin <url-do-repositorio> - Vincula seu repositório local a um repositório remoto.
+git push -u origin <nome-da-branch> - Envia seus commits locais para a branch correspondente no servidor remoto.
+git pull - Baixa e integra as últimas alterações do repositório remoto para a sua máquina.
+
+🌿 Branches e Merge
+git branch - Lista todas as branches do repositório.
+git checkout -b <nome-da-branch> - Cria uma nova branch e já muda para ela.
+git merge <nome-da-branch> - Junta as alterações de outra branch na branch onde você está atualmente.
+
+⏪ Desfazendo Alterações
+git reset --hard HEAD - Descarta todas as alterações locais feitas nos arquivos monitorados desde o último commit.
+git checkout -- <nome-arquivo> - Restaura um arquivo para o estado do último commit, desfazendo alterações não salvas.
