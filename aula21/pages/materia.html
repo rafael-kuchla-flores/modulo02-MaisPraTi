@@ -4,18 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Batman lança o Batpapo - Clarim Diário</title>
+    <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="materia.css" />
+    <script src="../js/components/site-header.js"></script>
+    <script src="../js/components/news-card.js"></script>
+    <script src="../js/components/site-footer.js"></script>
   </head>
   <body>
-    <header class="cabecalho">
-      <a href="index.html" class="logo">Clarim Diário</a>
-      <nav class="navegacao">
-        <a href="#">Política</a>
-        <a href="#">Economia</a>
-        <a href="#">Esportes</a>
-        <a href="#">Homem-Aranha</a>
-      </nav>
-    </header>
+    <site-header></site-header>
 
     <nav class="trilha">
       <a href="index.html">Início</a>
@@ -40,8 +36,8 @@
             <span class="data">18 de junho de 2026 - 8 min de leitura</span>
           </div>
           <div class="compartilhar">
-            <button>Compartilhar</button>
-            <button>Salvar</button>
+            <button class="btn btn--primary">Compartilhar</button>
+            <button class="btn btn--primary">Salvar</button>
           </div>
         </div>
 
@@ -74,14 +70,17 @@
           </p>
         </div>
         <div class="tags">
-          <a href="#">Heróis</a>
-          <a href="#">Justiça</a>
-          <a href="#">Vingança</a>
-          <a href="#">Cachaça</a>
+          <a href="#" class="tag">Heróis</a>
+          <a href="#" class="tag">Justiça</a>
+          <a href="#" class="tag">Vingança</a>
+          <a href="#" class="tag">Cachaça</a>
         </div>
 
         <figure class="imagem-destaque">
-          <img src="batman-bebado.jpg" alt="Homens Fugindo Fantasiados" />
+          <img
+            src="../assets/images/batman-bebado.jpg"
+            alt="Homens Fugindo Fantasiados"
+          />
 
           <figcaption>Batman e Robin fogem da polícia</figcaption>
         </figure>
@@ -102,49 +101,28 @@
           <h3>Receba as notícias</h3>
           <p>Assine nosso boletim diário.</p>
           <input type="email" placeholder="seu@email.com" />
-          <button>Assinar</button>
+          <button class="btn btn--primary">Assinar</button>
         </div>
       </aside>
     </div>
+
     <section class="relacionados">
-      <h2>Leia Támbem</h2>
+      <h2>Leia também</h2>
       <div class="grade">
-        <article class="cartao">
-          <span class="categoria">Economia</span>
-          <h3>Dolar recua e a bolsa fecha em altas</h3>
-        </article>
-
-        <article class="cartao">
-          <span class="categoria">Cultura</span>
-          <h3>Churrasco do rs é o melhor do Brasil</h3>
-        </article>
-
-        <article class="cartao">
-          <span class="categoria">Esportes</span>
-          <h3>Brasil é Hexacampeão</h3>
-        </article>
+        <news-card
+          categoria="Economia"
+          titulo="Dólar recua e bolsa fecha em alta"
+        ></news-card>
+        <news-card
+          categoria="Tecnologia"
+          titulo="Nova lei de dados entra em vigor"
+        ></news-card>
+        <news-card
+          categoria="Cultura"
+          titulo="Festival anuncia programação"
+        ></news-card>
       </div>
     </section>
-
-    <footer class="rodape">
-      <div class="coluna">
-        <h4>Clarim Diário</h4>
-        <p>Alta Credibilidade, Dirigido J. Jonah Jameson</p>
-      </div>
-      <div class="coluna">
-        <h4>Editoriais</h4>
-        <a href="#">Política</a>
-        <a href="#">Cultura</a>
-        <a href="#">Esportes</a>
-        <a href="#">Homem-Aranha</a>
-      </div>
-      <div class="coluna">
-        <h4>Institucional</h4>
-        <a href="#">Termos de Uso</a>
-        <a href="#">Privacidade</a>
-        <a href="#">Quem Somos</a>
-        <a href="#">Contato</a>
-      </div>
-    </footer>
+    <site-footer></site-footer>
   </body>
 </html>
